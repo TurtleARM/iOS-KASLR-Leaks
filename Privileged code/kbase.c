@@ -24,7 +24,7 @@ int main(int argc, char **argv) {
     mach_port_t ktask;
     mach_msg_type_number_t count = 0;
     vm_offset_t data;
-    vm_address_t kinfo = 0x802D1C5C + 0x6400000;  // static + slide
+    vm_address_t kinfo = 0x802D1C5C + 0x00000000;  // Add your slide here
     res = task_for_pid(mach_task_self(), 0, &ktask);
     if (res != KERN_SUCCESS) {
         fprintf(stderr, "Cannot get task for pid 0: %s\n", mach_error_string(res));
