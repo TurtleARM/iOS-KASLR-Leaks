@@ -18,9 +18,9 @@
 #include "decode.h"  // base64_decode library
 
 #define IKOT_MASTER_DEVICE      19
-#define	IKOT_HOST		3
-#define	IKOT_HOST_PRIV		4
-#define IKOT_HOST_SECURITY	17
+#define	IKOT_HOST				3
+#define	IKOT_HOST_PRIV			4
+#define IKOT_HOST_SECURITY		17
 #define REALHOST_IPT4           0x803219a8
 // You can find the realhost static address for your device by looking at the return value of _host_priv_self
 
