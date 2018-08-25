@@ -18,9 +18,9 @@
 #include "decode.h"  // base64_decode library
 
 #define IKOT_MASTER_DEVICE      19
-#define	IKOT_HOST				3
-#define	IKOT_HOST_PRIV			4
-#define IKOT_HOST_SECURITY		17
+#define	IKOT_HOST		3
+#define	IKOT_HOST_PRIV		4
+#define IKOT_HOST_SECURITY	17
 #define REALHOST_IPT4           0x803219a8
 // You can find the realhost static address for your device by looking at the return value of _host_priv_self
 
@@ -99,7 +99,7 @@ mach_port_name_t _SC_logMachPortStatus(void)
 
 struct portinfo getMachPorts()
 {
-    kern_return_t		    status;
+    kern_return_t		status;
     mach_port_name_array_t	ports;
     mach_port_type_array_t	types;
     mach_msg_type_number_t  typenum, portnum;
