@@ -204,7 +204,7 @@ NSData *getKextInfoData()
      exit(-1);
      }*/
     io_master_t ipc_master_port = 0;
-    err = host_get_io_master(mach_host_self(), &ipc_master_port);  // might not end up in kernel_task -> reboot and try again
+    err = host_get_io_master(mach_host_self(), &ipc_master_port);
     if (err != KERN_SUCCESS) {
         fprintf(stderr, "Error: %s", mach_error_string(err));
         exit(-1);
